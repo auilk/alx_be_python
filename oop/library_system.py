@@ -13,6 +13,9 @@ class Book:
     def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
 
+    def get_details(self):
+        return f"Book: {self.title} by {self.author}"
+
 class EBook(Book):
     def __init__(self, title, author, year, file_size):
         super().__init__(title, author, year)
@@ -43,4 +46,4 @@ class Library:
 
     def list_books(self):
         for book in self.books:
-            print(book)
+            print(book.get_details())
