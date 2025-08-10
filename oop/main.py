@@ -1,5 +1,4 @@
-from book_class import Book
-from library_system import EBook, PrintBook, Library
+from library_system import Book, EBook, PrintBook, Library
 
 def main():
     my_library = Library()
